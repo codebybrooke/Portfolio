@@ -1,123 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brooke Langis | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cookie&display=swap" rel="stylesheet">
+  
+
+<link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
 
-<div class="fixed-bg"></div>
+  <!-- Navigation -->
+ <nav class="nav">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="Resume/index.html" target="_blank">Resume</a></li>
+        <li><a href="https://github.com/codebybrooke" target="_blank">Github Portfolio</a></li>
+        <li><a href="https://www.linkedin.com/in/brookelangis99" target="_blank">LinkedIn</a></li>
+        <li><a href="#" id="contactBtn">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<!-- NAVIGATION -->
-<nav>
-  <a href="#hero">Home</a>
-  <a href="#about">About Me</a>
-  <a href="#skills">Skills</a>
-  <a href="#experience">Experience</a>
-  <a href="#education">Education</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <!-- MAIN WRAPPER -->
+  <main class="wrapper">
 
-<!-- HERO -->
-<section id="hero" class="container hero-section">
-  <div class="hero-text">
-    <h1>Brooke Langis</h1>
-    <h3>IT & Web Administration | Cyber Operations Specialist | Technical Troubleshooting</h3>
-    <p class="tagline">Cyber operations professional with a strong foundation in IT troubleshooting, web administration, and cloud-based systems. Experienced in AI model evaluation, logistics coordination, and operations management, with a proven track record of precision, analytical insight, and technical problem-solving.</p>
-    <p>Email: brookelangis@gmail.com | Phone: (208) 329-1515 | GitHub: <a href="#">Link</a></p>
-  </div>
+    <!-- ROW 1 -->
+<section class="row-hero">
+  <img src="images/img_8.jpeg" alt="Hero Image" class="hero-img">
+
+ 
+
+
+    <div class="hero-content">
+        <h1>Brooke Langis</h1>   
+        
+        <div class="mobile-menu-row">
+        <a href="Resume/index.html">Resume</a>
+        <a href="https://github.com/codebybrooke" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/brookelangis99" target="_blank">LinkedIn</a>
+        <a href="#" id="mobileContactBtn">Contact</a>
+        </div>
+
+
+        <p class="typewriter" id="hero-text">Creative Designer • Critical Thinker • Technical Problem Solver</p>
+    
+    </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="container pastel-green">
-  <h2>About Me</h2>
-  <p>I am a technically skilled professional specializing in IT troubleshooting, web administration, and cyber operations. My experience spans AI model evaluation, system management, and operational analytics, allowing me to approach complex technical challenges with precision and efficiency. I thrive in roles that combine analytical problem-solving with technology implementation and continuous system improvement. I am passionate about creating efficient workflows, supporting secure IT environments, and applying my education in cyber operations and information technology to real-world challenges.</p>
-</section>
 
-<!-- SKILLS -->
-<section id="skills" class="container cream">
-  <h2>Technical Skills / Core Competencies</h2>
-  <ul>
-    <li>IT & System Administration: Troubleshooting, hardware/software diagnostics, system monitoring, user support</li>
-    <li>Web Administration & Development: HTML5, CSS, JavaScript, GitHub Pages, website deployment and maintenance</li>
-    <li>Data Analysis & Operations: Reporting systems management, metrics evaluation, data-driven decision support</li>
-    <li>Cloud & Networking: AWS Cloud (2025), Linux Essentials (2026), CompTIA (2026)</li>
-    <li>AI & Programming: Prompt engineering, AI model evaluation, Python verification, code review</li>
-    <li>Tools & Platforms: Microsoft Office Suite, Jira/Trello, database management, scheduling/logistics software</li>
-  </ul>
-</section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="container transparent">
-  <h2>Professional Experience</h2>
-  <div class="job">
-    <strong>Outlier AI — AI Trainer (April 2024 – Present)</strong>
-    <ul>
-      <li>Designed, tested, and evaluated diverse prompts to rigorously assess AI model outputs.</li>
-      <li>Verified Python code and technical responses against standards to ensure accuracy and functionality.</li>
-      <li>Developed structured evaluation frameworks to standardize grading of AI responses.</li>
-      <li>Collaborated with cross-functional teams to identify model weaknesses and recommend optimizations.</li>
-      <li><em>Key Skills:</em> Technical evaluation, problem-solving, code verification, AI prompt engineering</li>
-    </ul>
-  </div>
-  <div class="job">
-    <strong>Amazon — Logistics Coordinator (2024 – Present)</strong>
-    <ul>
-      <li>Coordinated daily delivery routes and managed package fulfillment with high accuracy.</li>
-      <li>Maintained detailed records to ensure operational efficiency and timely reporting.</li>
-      <li>Analyzed delivery metrics to optimize routing and performance.</li>
-      <li><em>Key Skills:</em> Operational management, logistics coordination, data tracking, efficiency optimization</li>
-    </ul>
-  </div>
-  <div class="job">
-    <strong>Operations Manager (2019 – 2021)</strong>
-    <ul>
-      <li>Managed reporting systems and digital archives to ensure accuracy and compliance.</li>
-      <li>Analyzed occupancy trends, tenant activity, and financial data to support strategic decisions.</li>
-      <li>Implemented data-driven insights to improve budget allocations and operational efficiency.</li>
-      <li><em>Key Skills:</em> Data analysis, system management, reporting accuracy, operational optimization</li>
-    </ul>
-  </div>
-</section>
+  </main>
 
-<!-- EDUCATION -->
-<section id="education" class="container pastel-green">
-  <h2>Education</h2>
-  <ul>
-    <li>Bachelor of Applied Science – Cyber Operations & Resilience, Boise State University, 2024 – Highest Honors, 4.0 GPA</li>
-    <li>Bachelor of Science – Information Technology (Expected 2026), Maintaining 4.0 GPA</li>
-    <li>Associate of Applied Science – Business Management & Entrepreneurship, Boise State University, 2021 – Dean’s List, 3.9 GPA</li>
-  </ul>
-</section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="container cream">
-  <h2>Certifications & Professional Development</h2>
-  <ul>
-    <li>Intermediate Technical Certificate, Boise State University, 2021</li>
-    <li>Innovation & Design, Boise State University, 2024</li>
-    <li>Amazon AWS Cloud Certification, 2025</li>
-    <li>Linux Essentials, Linux Professional Institute, 2026</li>
-    <li>CompTIA Certification (planned 2026)</li>
-  </ul>
-</section>
+<dialog id="contact">
+    <h2>Contact Me</h2>
+    <p>Phone: (208) 329-1515</p>
+    <p>Email: brookelangis.o@gmail.com</p>
+    <p></p>
+    <button onclick="document.getElementById('contact').close()">Close</button>
+  </dialog>
 
-<!-- CONTACT -->
-<section id="contact" class="container transparent">
-  <h2>Contact</h2>
-  <p>Email: brookelangis@gmail.com | Phone: (208) 329-1515 | GitHub: <a href="#">Link</a></p>
-</section>
-
-<!-- FOOTER + ROCKET -->
-<footer class="footer">
-  <div class="rocket-container">
-    <div class="rocket" id="rocket"></div>
-  </div>
-</footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
