@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brooke Langis | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
+
+
+    <style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff7eb;
+    color: #333;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 00px;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+
+/* White card style */
+.card {
+    background-color: #fff7eb;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    border-bottom: 5px solid #ddb05cef;
+    padding-bottom: 20px;
+}
+
+.header h1 {
+    font-size: clamp(1.6rem, 5vw, 2em);
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.header p {
+  font-size: clamp(2rem, 2.5vw, 2em);
+    color: #555;
+}
+
+/* Sections */
+.section h2 {
+    font-size: 1.4em;
+    color: #388f8f;
+    margin-bottom: 10px;
+}
+
+.section-content p {
+    margin-bottom: 6px;
+    font-size: 0.75em;
+}
+
+.section-content ul {
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+.section-content ul li {
+    margin-bottom: 5px;
+    font-size: 0.75em;
+}
+
+/* Responsive text scaling */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .section h2 {
+        font-size: 1.3em;
+    }
+
+    .section-content p, .section-content ul li {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.6em;
+    }
+
+    .section h2 {
+   font-size: clamp(.9rem, 2.9vw, 1.4rem);
+    }
+
+    .section-content p, .section-content ul li {
+        font-size: clamp(.5rem, 2.5vw, 1rem);
+    }
+
+    .card {
+        padding: 15px 20px;
+    }
+}
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+<div class="container">
+
+
+    <!-- Education Section -->
+    <section class="section card">
+        <h2>Education</h2>
+        <div class="section-content">
+            <p><strong>Western Governors University</strong> – Information Technology, 4.0 GPA</p>
+            <p><strong>Boise State University</strong> – Cyber Operations, 4.0 GPA</p>
+            <p><strong>College of Southern Idaho</strong> – Business Management, 3.8 GPA</p>
+        </div>
+    </section>
+
+    <!-- Certifications & Technical Training -->
+    <section class="section card">
+        <h2>Certifications & Technical Training</h2>
+        <div class="section-content">
+            <p>HTML & HTML APIs, CSS, Javascript, Python</p>
+            <p>Cybersecurity Fundamentals & Awareness, IT Support & Troubleshooting</p>
+            <p>Network & System Monitoring, Ethical AI Evaluation</p>
+            <p>Data Analysis & Reporting, Project Coordination & Documentation</p>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="section card">
+        <h2>Professional Experience</h2>
+        <div class="section-content">
+            <p><strong>AI Writing Evaluator & Reviewer – Freelance / Contract</strong> | 2024 – current</p>
+            <ul>
+                <li>Processed and pre-analyzed large datasets to train and evaluate AI models for accuracy, truthfulness, and instruction adherence.</li>
+                <li>Conducted technical assessments and validation of AI outputs, correcting and optimizing evaluation metrics.</li>
+                <li>Collaborated with development teams to refine AI evaluation frameworks and improve model reliability.</li>
+            </ul>
+
+            <p><strong>Delivery Route Coordinator – Inspire Logistics, Jerome, ID</strong> | 2024 – current</p>
+            <ul>
+                <li>Managed and coordinated daily delivery routes, optimizing efficiency while ensuring timely package delivery.</li>
+                <li>Assisted in scheduling and coordinating routes for team members, fostering collaboration and operational continuity.</li>
+                <li>Communicated with logistics teams to troubleshoot delivery issues and maintain accurate route data.</li>
+                <li>Utilized digital tracking tools to monitor route progress and generate operational reports.</li>
+            </ul>
+
+            <p><strong>Property Manager / Operations & Compliance Specialist – NWRECC, Boise, ID</strong> | 2019 – 2023</p>
+            <ul>
+                <li>Implemented digital record-keeping and tenant management systems, enhancing data accuracy and retrieval.</li>
+                <li>Designed workflow automation for rent processing and maintenance scheduling, reducing errors and improving efficiency.</li>
+                <li>Ensured compliance with local safety codes and regulations using data-driven reporting and monitoring tools.</li>
+                <li>Developed educational materials and awareness training for tenants and staff regarding safety and digital compliance.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section card">
+        <h2>Technical Skills</h2>
+        <div class="section-content">
+            <p>Web Development: HTML, CSS, Java, HTML APIs</p>
+            <p>Programming & Scripting: Python, Java</p>
+            <p>Cybersecurity & IT: Network Monitoring, Cybersecurity Awareness & Training, IT Support & Troubleshooting</p>
+            <p>Data Analysis & Reporting, Project Coordination & Documentation</p>
+        </div>
+    </section>
+
+</div>
+
+
+<script>
+
+const headerText = "Information Technology | Cybersecurity | Web Development";
+const headerEl = document.querySelector('.header p');
+let index = 0;
+const typingSpeed = 200; // speed of typing in ms
+
+function typeWriter() {
+  if (index < headerText.length) {
+    headerEl.textContent += headerText.charAt(index);
+    index++;
+    setTimeout(typeWriter, typingSpeed);
+  }
+}
+
+// Start the typing animation once
+typeWriter();
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
